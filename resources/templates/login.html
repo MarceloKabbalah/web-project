@@ -1,0 +1,19 @@
+{% extends 'layouts/base.html' %}
+
+{% import 'components/forms.html' as form %}
+{% import 'components/submit.html' as submit %}
+{% block content %}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <form action="">
+                {{ form.input( 'email', 'Insira um e-mail', 'email') }}
+                {{ form.input( 'name', 'Insira seu nome', 'name') }}
+                {{ form.submit( 'submit', 'Login' , 'class') }}
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
