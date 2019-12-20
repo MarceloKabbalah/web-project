@@ -1,4 +1,5 @@
 # Flask Issues - **Project Under Development**
+![open issues](https://img.shields.io/github/issues/MarceloKabbalah/web-project?color=%2319a249) ![open PR](https://img.shields.io/github/issues-pr-closed/MarceloKabbalah/web-project?color=%23f25f56) ![license](https://img.shields.io/github/license/MarceloKabbalah/web-project) ![forks](https://img.shields.io/github/forks/MarceloKabbalah/web-project?style=social)
 
 Academic Project for Web Programming discipline at Faculdade Nova Roma - FGV
 
@@ -7,12 +8,12 @@ Academic Project for Web Programming discipline at Faculdade Nova Roma - FGV
 #### 1. open terminal and direct it to the locations where the web-project is located.
 
 #### 2. Run the below command.
-- 1.	Clone this repository.
-- 2.	Create a pipenv with Python 3.7.5
-- 3.	Enable pipenv => (pipenv shell).
-- 4.	Install the dependencies.
-- 5.	Run!!!.
-```sh
+- Clone this repository.
+- Create a pipenv with Python 3.7.5
+- Enable pipenv => (pipenv shell).
+- Install the dependencies.
+- Run!!!.
+```PYTHON
 git clone https://github.com/MarceloKabbalah/web-project.git
 cd web-project
 pip3 install pipenv
@@ -21,16 +22,16 @@ pip3 install -r requirements.txt
 python run.py
 ```
 #### 3. To create new database for the user
-- 1.	follow the first step
-- 2.	type 'python' in terminal
-	- 1. 	from app import db
-	- 2.   from app.models import User, Post
-	- 3.   User.query.delete()
-	- 4.   Post.query.delete()
-	- 5.   db.session.commit()
-	- 6.   exit()
+- Follow the first step
+- Type 'python' in terminal
+```MYSQL
+from app import db
+from app.models import User, Post
+User.query.delete()
+Post.query.delete()
+db.session.commit()
+exit()
+```
 #### 4. To close the debug feature
-- 1.	open run.py
-- 2.	make 'debug=True' to 'debug=False' in app.run
-## License
-Flask Issues is open source software [licensed as MIT](https://github.com/MarceloKabbalah/web-project/blob/master/LICENSE).
+- Open run.py
+- Make 'debug=True' to 'debug=False' in app.run
