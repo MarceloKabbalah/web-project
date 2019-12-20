@@ -1,0 +1,23 @@
+[33mcommit b078f6323d4e5d2632deeaa49d15ec87e6494c1c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Marcelo Kabbalah <marceloregis.soares@gmail.com>
+Date:   Wed Dec 11 22:50:41 2019 -0300
+
+    add models and auth templates
+
+[33mcommit 551b0bb3ac8ce908cab978b612209459589d01d4[m
+Author: Marcelo Kabbalah <marceloregis.soares@gmail.com>
+Date:   Sat Nov 16 04:40:51 2019 -0300
+
+    add routers, components, filters, and macro
+
+[33mcommit 9f9a88f85ab2b31121a2027bf17e7b1d93de6459[m
+Author: Marcelo Kabbalah <marceloregis.soares@gmail.com>
+Date:   Wed Nov 6 00:59:14 2019 -0300
+
+    base.html
+
+[33mcommit e8f14aab99f855401fbe89fe647ab8ee3dabadc4[m
+Author: Marcelo Kabbalah <marceloregis.soares@gmail.com>
+Date:   Tue Nov 5 19:44:05 2019 -0300
+
+    commit

@@ -1,24 +1,21 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, app, render_template
 from flask_sqlalchemy import SQLAlchemy
-from settings import BASE_DIR
+from flask_bcrypt import Bcrypt
+from settings import BASE_DIR, SECRET_KEY
+
+
+
+app = Flask(__name__,
+    template_folder=os.path.join(BASE_DIR, "resources", "templates"),
+    static_folder=os.path.join(BASE_DIR, "resources", "static")
+    )
+app.config['SECRET_KEY'] = SECRET_KEY
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///storage.db'
+db = SQLAlchemy(app)
+bcrypt = Bcrypt(app)
+
 from app.controllers import routes
+routes.load(app)
 
 
-def create_app():
-    app = Flask(__name__,
-        template_folder=os.path.join(BASE_DIR, "resources", "templates"), # => Config para reconehcer diretório templates
-        static_folder=os.path.join(BASE_DIR, "resources", "static") # => Config para reconehcer diretório static
-        
-        )
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config['SQLALCHEMY_DATBASE_URI'] = 'sqlite:///test.sqlite3'
-    db = SQLAlchemy(app)
-    
-    from app import routes
-    routes.load(app)
-
-    from app.filters import text_truncate
-    app.jinja_env.filters["text_truncate"] = text_truncate
-
-    return app
