@@ -1,5 +1,8 @@
 # Flask Issues - **Project Under Development**
-![open issues](https://img.shields.io/github/issues/MarceloKabbalah/web-project?color=%2319a249) ![open PR](https://img.shields.io/github/issues-pr-closed/MarceloKabbalah/web-project?color=%23f25f56) ![license](https://img.shields.io/github/license/MarceloKabbalah/web-project) ![forks](https://img.shields.io/github/forks/MarceloKabbalah/web-project?style=social)
+![GitHub](https://img.shields.io/github/license/MarceloKabbalah/web-project?color=blue)![Python version](https://img.shields.io/github/pipenv/locked/python-version/MarceloKabbalah/web-project)![Flask version](https://img.shields.io/github/pipenv/locked/dependency-version/MarceloKabbalah/web-project/flask)![Github Status](https://img.shields.io/pypi/status/Flask)
+![GitHub last commit](https://img.shields.io/github/last-commit/MarceloKabbalah/web-project)![GitHub issues](https://img.shields.io/github/issues/MarceloKabbalah/web-project)[![Code Style Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black/)
+
+![GitHub watchers](https://img.shields.io/github/watchers/MarceloKabbalah/web-project?style=social)![GitHub stars](https://img.shields.io/github/stars/MarceloKabbalah/web-project?style=social)![GitHub forks](https://img.shields.io/github/forks/MarceloKabbalah/web-project?style=social)
 
 Academic Project for Web Programming discipline at Faculdade Nova Roma - FGV
 
@@ -35,3 +38,11 @@ exit()
 #### 4. To close the debug feature
 - Open run.py
 - Make 'debug=True' to 'debug=False' in app.run
+
+
+## Contributing
+1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
+2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
+4. _Push_ (`git push origin feature/fooBar`)
+5. Crie um novo _Pull Request_
